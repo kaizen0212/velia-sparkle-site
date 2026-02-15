@@ -49,7 +49,7 @@ const Footer = () => {
           <div>
             <h4 className="font-semibold text-primary-foreground mb-4">Contact</h4>
             <div className="space-y-2 text-primary-foreground/60 text-sm">
-              <p><a href="tel:+33123456789" className="hover:text-primary-foreground transition-colors">📞 01 23 45 67 89</a></p>
+              <p><a href="tel:+33769554942" className="hover:text-primary-foreground transition-colors">📞 07 69 55 49 42</a></p>
               <p><a href="mailto:contact@velia-services.fr" className="hover:text-primary-foreground transition-colors">📧 contact@velia-services.fr</a></p>
               <p>📍 Paris et Île-de-France</p>
             </div>
