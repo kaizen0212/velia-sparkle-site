@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 import { Button } from "@/components/ui/button";
 import { Menu, X } from "lucide-react";
+import veliaLogo from "@/assets/velia-logo.png";
 
 const navLinks = [
   { label: "Accueil", href: "#accueil" },
@@ -30,9 +31,7 @@ const Header = () => {
     >
       <div className="container mx-auto flex items-center justify-between">
         <a href="#accueil" className="flex items-center gap-2">
-          <div className="w-10 h-10 rounded-lg bg-gradient-primary flex items-center justify-center">
-            <span className="text-primary-foreground font-bold text-lg">V</span>
-          </div>
+          <img src={veliaLogo} alt="VELIA SERVICES" className="w-10 h-10 rounded-lg object-contain" />
           <div>
             <span className={`font-bold text-lg tracking-tight ${scrolled ? "text-foreground" : "text-primary-foreground"}`}>
               VELIA

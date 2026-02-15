@@ -13,9 +13,16 @@ const ContactSection = () => {
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
+    
+    const subject = encodeURIComponent(`Demande de devis - ${form.service || 'Nettoyage'}`);
+    const body = encodeURIComponent(
+      `Nom: ${form.name}\nEmail: ${form.email}\nTéléphone: ${form.phone}\nService: ${form.service}\n\nMessage:\n${form.message}`
+    );
+    window.location.href = `mailto:contact@velia-services.fr?subject=${subject}&body=${body}`;
+    
     toast({
       title: "Demande envoyée !",
-      description: "Nous vous recontacterons dans les 24 heures.",
+      description: "Votre client email va s'ouvrir. Nous vous recontacterons dans les 24 heures.",
     });
     setForm({ name: "", email: "", phone: "", service: "", message: "" });
   };
@@ -109,7 +116,7 @@ const ContactSection = () => {
               </div>
               <div>
                 <h4 className="font-semibold text-foreground">Téléphone</h4>
-                <p className="text-muted-foreground">01 23 45 67 89</p>
+                <a href="tel:+33123456789" className="text-muted-foreground hover:text-primary transition-colors">01 23 45 67 89</a>
               </div>
             </div>
             <div className="flex items-start gap-4">
@@ -118,7 +125,7 @@ const ContactSection = () => {
               </div>
               <div>
                 <h4 className="font-semibold text-foreground">Email</h4>
-                <p className="text-muted-foreground">contact@velia-services.fr</p>
+                <a href="mailto:contact@velia-services.fr" className="text-muted-foreground hover:text-primary transition-colors">contact@velia-services.fr</a>
               </div>
             </div>
             <div className="flex items-start gap-4">
@@ -138,6 +145,7 @@ const ContactSection = () => {
               <div>
                 <h4 className="font-semibold text-foreground">Adresse</h4>
                 <p className="text-muted-foreground">Paris et Île-de-France</p>
+                <p className="text-muted-foreground text-xs">Créteil, Boulogne, Saint-Denis, Versailles...</p>
               </div>
             </div>
 
