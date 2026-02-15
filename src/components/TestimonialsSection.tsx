@@ -4,26 +4,26 @@ import { useScrollAnimation } from "@/hooks/useScrollAnimation";
 
 const testimonials = [
   {
-    name: "Marie Dupont",
-    role: "Locataire, Paris 15e",
+    name: "Camille Moreau",
+    role: "Locataire, Créteil (94)",
     rating: 5,
     text: "Service impeccable ! Mon appartement n'a jamais été aussi propre. L'équipe est ponctuelle, discrète et très professionnelle. Je recommande vivement.",
   },
   {
-    name: "Thomas Laurent",
-    role: "Propriétaire, Lyon",
+    name: "Nicolas Petit",
+    role: "Propriétaire, Saint-Denis (93)",
     rating: 5,
     text: "J'ai fait appel à Velia Services pour un nettoyage fin de bail. Le résultat a dépassé mes attentes et j'ai récupéré ma caution intégralement !",
   },
   {
-    name: "Sophie Bernard",
-    role: "Locataire, Marseille",
+    name: "Laura Lefebvre",
+    role: "Locataire, Boulogne-Billancourt (92)",
     rating: 5,
     text: "Un entretien régulier qui me change la vie. Chaque semaine, je retrouve un appartement frais et impeccable. Merci Velia !",
   },
   {
-    name: "Jean-Pierre Martin",
-    role: "Propriétaire, Bordeaux",
+    name: "Mehdi Roux",
+    role: "Propriétaire, Versailles (78)",
     rating: 4,
     text: "Très bon rapport qualité-prix. L'équipe est sérieuse et utilise des produits écologiques, ce qui est important pour nous. Service recommandé.",
   },
