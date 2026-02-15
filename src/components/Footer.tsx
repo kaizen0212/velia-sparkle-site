@@ -1,4 +1,5 @@
 import { Facebook, Instagram, Linkedin } from "lucide-react";
+import { Link } from "react-router-dom";
 import veliaLogo from "@/assets/velia-logo.png";
 
 const Footer = () => {
@@ -61,9 +62,9 @@ const Footer = () => {
             © 2025 VELIA SERVICES. Tous droits réservés.
           </p>
           <div className="flex gap-6 text-primary-foreground/40 text-sm">
-            <a href="#" className="hover:text-primary-foreground/70 transition-colors">Mentions légales</a>
-            <a href="#" className="hover:text-primary-foreground/70 transition-colors">CGV</a>
-            <a href="#" className="hover:text-primary-foreground/70 transition-colors">Politique de confidentialité</a>
+            <Link to="/mentions-legales" className="hover:text-primary-foreground/70 transition-colors">Mentions légales</Link>
+            <Link to="/cgv" className="hover:text-primary-foreground/70 transition-colors">CGV</Link>
+            <Link to="/politique-de-confidentialite" className="hover:text-primary-foreground/70 transition-colors">Politique de confidentialité</Link>
           </div>
         </div>
       </div>
